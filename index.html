@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <h1>Text Analyzer</h1>
+
+    <textarea name="Input-text" id="input-text"></textarea>
+    <p id="check-message">Please enter a text</p>
+
+    <input
+      type="submit"
+      value="Analyze"
+      id="analyzation-input"
+      onclick="getMostFrequentWord()"
+    />
+    <input type="submit" value="Replace" id="replace-button" />
+
+    <label for="search-input" id="search-label">Search for:</label>
+    <input type="text" id="search-input" />
+
+    <label for="replace-input" id="replace-label">Replace with:</label>
+    <input type="text" id="replace-input" />
+    <div>
+      <input type="submit" value="Convert to UpperCase" id="UpperCase" />
+      <input type="submit" value="Convert to LowerCase" id="LowerCase" />
+    </div>
+
+    <div id="analyze-container">
+      <p id="character-count">Number of Characters: 0</p>
+      <p id="word-count">Number of Words: 0</p>
+      <p id="sentence-count">Number of Sentences: 0</p>
+      <p id="most-frequent-word">Most Frequent Word:</p>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
